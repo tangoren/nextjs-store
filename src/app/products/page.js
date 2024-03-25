@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+
 import { fetchProducts } from "@/services/api";
 
 export async function loader() {
