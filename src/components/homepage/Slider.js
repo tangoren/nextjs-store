@@ -83,7 +83,7 @@ export default function Slider() {
       // autoplay={{ delay: 3000 }}
       // onSwiper={(swiper) => console.log(swiper)}
       // onSlideChange={() => console.log("slide change")}
-      className="homepage-slider"
+      className="select-none homepage-slider"
     >
       <SwiperSlide>
         <SlideItem
