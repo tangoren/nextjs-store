@@ -23,7 +23,7 @@ const SectionCategoryItem = ({ size, link = "/", image, title }) => {
 
 export default function SectionCategory() {
   return (
-    <div className="grid grid-cols-1 grid-rows-3 gap-4 md:grid-rows-4 md:grid-cols-4 md:gap-8">
+    <div className="grid grid-cols-1 grid-rows-3 gap-4 md:grid-rows-2 md:grid-cols-4 md:gap-8">
       <SectionCategoryItem
         size="half"
         link="/products"
