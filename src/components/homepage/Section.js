@@ -24,7 +24,7 @@ export default function Section({
                 className="p-0 font-bold text-indigo-600 hover:no-underline"
               >
                 <Link href={buttonLink}>
-                  {buttonText} <ArrowRight className="w-4 h-4 mr-l" />
+                  {buttonText} <ArrowRight className="w-4 h-4 ml-1.5" />
                 </Link>
               </Button>
             </div>
