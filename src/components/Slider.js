@@ -10,7 +10,7 @@ import classNames from "classnames";
 
 import { Button } from "@/components/ui/button";
 
-const SlideComponent = ({
+const SlideItem = ({
   title,
   description,
   buttonText,
@@ -34,13 +34,13 @@ const SlideComponent = ({
 
           <Button className="px-12">{buttonText}</Button>
 
-          <SlideComponentBigText
+          <SlideItemVerticalText
             title={title}
             color={titleClass}
             direction="left"
           />
 
-          <SlideComponentBigText
+          <SlideItemVerticalText
             title={title}
             color={titleClass}
             direction="right"
@@ -55,7 +55,7 @@ const SlideComponent = ({
   );
 };
 
-const SlideComponentBigText = ({ title, color, direction }) => {
+const SlideItemVerticalText = ({ title, color, direction }) => {
   return (
     <div
       className={classNames(
@@ -86,7 +86,7 @@ export default function Slider() {
       className="homepage-slider"
     >
       <SwiperSlide>
-        <SlideComponent
+        <SlideItem
           title="New Arrivals Are Here"
           description="The new arrivals have, well, newly arrived. Check out the latest options from our summer small-batch release while they‘re still in stock."
           buttonText="Shop Now"
@@ -96,7 +96,7 @@ export default function Slider() {
         />
       </SwiperSlide>
       <SwiperSlide>
-        <SlideComponent
+        <SlideItem
           title="Fresh Finds Just For You"
           description="Be the first to explore our fresh arrivals. From vibrant summer styles to must-have accessories, find your new favorites today."
           buttonText="Shop Now"
