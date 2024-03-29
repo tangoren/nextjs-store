@@ -1,9 +1,12 @@
+import { BadgePercent } from "lucide-react";
+
 import Topbar from "@/components/layout/Topbar";
 import Navbar from "@/components/layout/Navbar";
 import Slider from "@/components/homepage/Slider";
 import Section from "@/components/homepage/Section";
 import SectionCategory from "@/components/homepage/SectionCategory";
 import SectionProducts from "@/components/homepage/SectionProducts";
+import SectionCta from "@/components/homepage/SectionCta";
 
 export default function Home() {
   return (
@@ -28,6 +31,10 @@ export default function Home() {
         className="pt-32"
       >
         <SectionProducts />
+      </Section>
+
+      <Section className="mt-32">
+        <SectionCta />
       </Section>
 
       <div style={{ height: 5000 }}>{/* temporary space for scrolling */}</div>
