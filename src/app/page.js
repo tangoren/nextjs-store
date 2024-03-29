@@ -3,7 +3,7 @@ import Navbar from "@/components/layout/Navbar";
 import Slider from "@/components/homepage/Slider";
 import Section from "@/components/homepage/Section";
 import SectionCategory from "@/components/homepage/SectionCategory";
-import Card from "@/components/product/Card";
+import SectionProducts from "@/components/homepage/SectionProducts";
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
       <Topbar />
       <Navbar />
       <Slider />
+
       <Section
         title="Shop by Category"
         buttonText="View All"
@@ -26,12 +27,7 @@ export default function Home() {
         buttonLink="/products"
         className="pt-32"
       >
-        <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </div>
+        <SectionProducts />
       </Section>
 
       <div style={{ height: 5000 }}>{/* temporary space for scrolling */}</div>
