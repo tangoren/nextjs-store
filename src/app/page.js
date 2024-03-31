@@ -1,7 +1,6 @@
-import { BadgePercent } from "lucide-react";
-
 import Topbar from "@/components/layout/Topbar";
 import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import Slider from "@/components/homepage/Slider";
 import Section from "@/components/homepage/Section";
 import SectionCategory from "@/components/homepage/SectionCategory";
@@ -37,7 +36,7 @@ export default function Home() {
         <SectionCta />
       </Section>
 
-      <div style={{ height: 5000 }}>{/* temporary space for scrolling */}</div>
+      <Footer />
     </div>
   );
 }
