@@ -54,7 +54,9 @@ export default function Navbar() {
   return (
     <div className="sticky top-0 z-10 py-6 text-center border-b bg-white/85 border-slate-200 backdrop-blur-xl">
       <div className="container flex gap-4">
-        <div className="rounded-full size-10 bg-gradient-to-r from-violet-500 to-fuchsia-500 shrink-0"></div>
+        <Link href="/">
+          <div className="rounded-full size-10 bg-gradient-to-r from-violet-500 to-fuchsia-500 shrink-0"></div>
+        </Link>
 
         <div className="flex justify-between w-full gap-12">
           <MenuItems />
