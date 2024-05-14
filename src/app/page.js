@@ -14,25 +14,19 @@ export default function Home() {
       <Navbar />
       <Slider />
 
-      <Section
-        title="Shop by Category"
-        buttonText="View All"
-        buttonLink="/products"
-        className="pt-24"
-      >
+      <Section title="Shop by Category" buttonText="View All" className="pt-24">
         <SectionCategory />
       </Section>
 
       <Section
         title="Our Picks for You"
         buttonText="View All"
-        buttonLink="/products"
-        className="pt-32"
+        className="pt-24 md:pt-32"
       >
         <SectionProducts />
       </Section>
 
-      <Section className="mt-32">
+      <Section className="mt-24 md:mt-32">
         <SectionCta />
       </Section>
 

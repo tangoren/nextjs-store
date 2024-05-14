@@ -3,13 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
-export default function Section({
-  children,
-  title,
-  buttonText,
-  buttonLink = "/",
-  className,
-}) {
+export default function Section({ children, title, buttonText, className }) {
   return (
     <div className={`${className} container`}>
       {title && (
@@ -23,9 +17,9 @@ export default function Section({
                 asChild
                 className="p-0 font-bold text-indigo-600 hover:no-underline"
               >
-                <Link href={buttonLink}>
+                <div className="cursor-no-drop">
                   {buttonText} <ArrowRight className="w-4 h-4 ml-1.5" />
-                </Link>
+                </div>
               </Button>
             </div>
           )}

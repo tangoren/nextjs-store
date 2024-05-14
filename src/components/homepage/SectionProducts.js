@@ -1,40 +1,34 @@
-"use client";
-
-import { useEffect, useState } from "react";
-import { LoaderCircle } from "lucide-react";
-
-import { fetchProducts } from "@/services/api";
 import Card from "@/components/product/Card";
-import { Skeleton } from "@/components/ui/skeleton";
+
+const products = [
+  {
+    id: 1,
+    image: "/img/product-1.jpg",
+    title: "Classic Black Cotton Crew Neck T-Shirt",
+    price: 109.99,
+  },
+  {
+    id: 2,
+    image: "/img/product-2.jpg",
+    title: "Stylish Black Slim-Fit Long Sleeve Shirt",
+    price: 139.99,
+  },
+  {
+    id: 3,
+    image: "/img/product-4.jpg",
+    title: "Cozy Black Warm Knit Cap",
+    price: 55.99,
+  },
+  {
+    id: 4,
+    image: "/img/product-3.jpg",
+    title: "Insulated Black Stainless Steel Vacuum Flask",
+    price: 15.99,
+  },
+];
 
 export default function SectionProducts() {
-  const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const getProducts = async () => {
-      const allProducts = await fetchProducts();
-      const productMap = {};
-
-      allProducts.forEach((product) => {
-        if (!productMap[product.category]) {
-          productMap[product.category] = product;
-        }
-      });
-
-      const selectedProducts = Object.values(productMap);
-      setProducts(selectedProducts);
-      setLoading(false);
-    };
-
-    getProducts();
-  }, []);
-
-  return loading ? (
-    <Skeleton className="w-full h-[462px] rounded-lg flex justify-center items-center text-slate-400">
-      <LoaderCircle className="animate-spin" size={32} />
-    </Skeleton>
-  ) : (
+  return (
     <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
       {products.map((product) => (
         <Card key={product.id} product={product} />
