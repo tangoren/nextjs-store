@@ -1,6 +1,9 @@
 # E-commerce Landing Page with Next.js, shadcn/ui, and Tailwind CSS
 
-This is an e-commerce landing page project, built using Next.js, This is an e-commerce landing page project, built using Next.js, shadcn/ui, and TailwindCSS. The project is component-based and designed for static content.
+This is an e-commerce landing page project, built using Next.js, shadcn/ui, and TailwindCSS. The project is component-based and designed for static content. This project is open-source and welcomes contributions from the community.
+
+![introduction](https://github.com/user-attachments/assets/ac5f6d2c-0404-4220-a9d8-0db0410dbe7a)
+
 
 ## Features
 
