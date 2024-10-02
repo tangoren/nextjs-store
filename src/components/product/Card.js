@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import convertCurrency from "@/helpers/currency";
+import { convertCurrency } from "@/helpers/currency";
 
 export default function Card({ product }) {
   return (

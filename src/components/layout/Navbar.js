@@ -1,8 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Search, UserRound, ShoppingBag, Menu } from "lucide-react";
 import classNames from "classnames";
+import {
+  RiMenuLine,
+  RiSearchLine,
+  RiShoppingBag4Line,
+  RiUser3Line,
+} from "@remixicon/react";
 
 import DevLink from "../DevLink";
 
@@ -54,14 +59,14 @@ export default function Navbar() {
 
           <div className="flex gap-3 ml-auto">
             <Button variant="link" size="icon" className="cursor-no-drop">
-              <Search />
+              <RiSearchLine />
             </Button>
             <Button variant="link" size="icon" className="cursor-no-drop">
-              <UserRound />
+              <RiUser3Line />
             </Button>
             <Button variant="link" className="p-0 pl-2 cursor-no-drop" asChild>
               <div className="flex gap-2">
-                <ShoppingBag className="shrink-0" />
+                <RiShoppingBag4Line className="shrink-0" />
                 <Badge className="select-none">99</Badge>
               </div>
             </Button>
@@ -69,7 +74,7 @@ export default function Navbar() {
             {isClient && (
               <Sheet>
                 <SheetTrigger className="inline-flex items-center justify-center lg:hidden size-10">
-                  <Menu />
+                  <RiMenuLine />
                 </SheetTrigger>
                 <SheetContent>
                   <SheetHeader className="text-left">

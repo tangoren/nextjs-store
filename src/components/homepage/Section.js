@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { RiArrowRightLine } from "@remixicon/react";
 
 import { Button } from "@/components/ui/button";
 
@@ -18,7 +17,7 @@ export default function Section({ children, title, buttonText, className }) {
                 className="p-0 font-bold text-indigo-600 hover:no-underline"
               >
                 <div className="cursor-no-drop">
-                  {buttonText} <ArrowRight className="w-4 h-4 ml-1.5" />
+                  {buttonText} <RiArrowRightLine className="w-4 h-4 ml-1.5" />
                 </div>
               </Button>
             </div>

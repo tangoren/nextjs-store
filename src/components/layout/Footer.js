@@ -1,15 +1,21 @@
 "use client";
 
-import { ArrowRight, Award, ShieldCheck, Users, Zap } from "lucide-react";
 import Link from "next/link";
 import { toast } from "sonner";
+import {
+  RiArrowRightLine,
+  RiFlashlightLine,
+  RiGroupLine,
+  RiHeart3Line,
+  RiShieldCheckLine,
+} from "@remixicon/react";
 
 import DevLink from "../DevLink";
 
 const FooterAdvantageItem = ({ iconName, title, description }) => {
   return (
     <div>
-      <div className="relative flex items-center justify-center mx-auto bg-white rounded-full size-16 stroke-indigo-400 border border-indigo-200 before:content-[''] before:rounded-full before:border before:border-indigo-100 before:size-20 before:-top-2 before:-left-2 before:absolute after:content-[''] after:rounded-full after:border after:border-indigo-50 after:size-24 after:-top-4 after:-left-4 after:absolute">
+      <div className="relative flex items-center justify-center mx-auto bg-white rounded-full size-16 text-indigo-400 border border-indigo-200 before:content-[''] before:rounded-full before:border before:border-indigo-100 before:size-20 before:-top-2 before:-left-2 before:absolute after:content-[''] after:rounded-full after:border after:border-indigo-50 after:size-24 after:-top-4 after:-left-4 after:absolute">
         {iconName}
       </div>
 
@@ -53,7 +59,10 @@ const FooterMenuSectionItem = ({ title, link }) => {
       >
         {title}
         {link && (
-          <ArrowRight size={12} className="relative top-px stroke-slate-400" />
+          <RiArrowRightLine
+            size={12}
+            className="relative top-px stroke-slate-400"
+          />
         )}
       </Link>
     </li>
@@ -66,32 +75,32 @@ export default function Footer() {
       <div className="container">
         <div className="grid grid-cols-2 gap-8 gap-x-8 gap-y-16 lg:gap-16 lg:grid-cols-4">
           <FooterAdvantageItem
-            iconName={<Zap color />}
+            iconName={<RiFlashlightLine />}
             title="Fast Shipping"
             description="Get your products quickly with our expedited shipping options available at checkout."
           />
 
           <FooterAdvantageItem
-            iconName={<ShieldCheck color />}
+            iconName={<RiShieldCheckLine />}
             title="Secure Payment"
             description="Your payment information is always secure with our encrypted checkout process."
           />
 
           <FooterAdvantageItem
-            iconName={<Award color />}
+            iconName={<RiHeart3Line />}
             title="Top Quality"
             description="We guarantee top-quality products, sourced from the best manufacturers worldwide."
           />
 
           <FooterAdvantageItem
-            iconName={<Users color />}
+            iconName={<RiGroupLine />}
             title="Excellent Support"
             description="Our customer support team is here to help you with any queries you might have."
           />
         </div>
 
         <div className="pt-12 mt-12 border-t border-dashed lg:mt-20 lg:pt-20 border-slate-200">
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-6 md:gap-8 max-sm:mx-auto gap-y-8">
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-4 lg:grid-cols-6 gap-x-8 gap-y-16 lg:gap-16 max-sm:mx-auto">
             <div className="flex flex-col items-center order-5 pt-10 mt-4 border-t border-dashed lg:pt-0 lg:mt-0 lg:order-first col-span-full lg:col-span-2 lg:items-start border-slate-200 lg:border-none">
               <div className="rounded-full size-10 bg-gradient-to-r from-violet-500 to-fuchsia-500 shrink-0"></div>
 

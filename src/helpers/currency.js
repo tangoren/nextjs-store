@@ -1,8 +1,4 @@
-export default function convertCurrency(
-  amount,
-  currency = "USD",
-  locale = "en-US",
-) {
+export function convertCurrency(amount, currency = "USD", locale = "en-US") {
   const formatter = new Intl.NumberFormat(locale, {
     style: "currency",
     currency: currency,

@@ -28,7 +28,7 @@ export default function DevLink({ type }) {
       <Link
         href={href}
         target="_blank"
-        className="flex gap-2 text-white select-none bg-gradient-to-r from-indigo-500 to-indigo-600"
+        className="flex gap-2 text-white select-none bg-gradient-to-r from-pink-500 to-pink-600"
       >
         <div className="text-white/50">{icon}</div> {title}
       </Link>

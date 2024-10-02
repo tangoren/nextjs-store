@@ -6,7 +6,7 @@ import { Toaster } from "@/components/ui/sonner";
 const fontBody = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Nextjs Store",
+  title: "Nextjs Ecommerce Landing",
   description: "Lorem ipsum dolor sit amet",
 };
 
